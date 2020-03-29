@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#8BC34A"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="  设置"
+            android:textColor="#F1F1F1"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="自动/手动  "
+            android:textSize="25dp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/radioButtonzi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自动" />
+
+            <RadioButton
+                android:id="@+id/radioButtonshou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="手动" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listviewa"
+        android:layout_width="match_parent"
+        android:layout_height="590dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="@+id/button_quxiao"
+        app:layout_constraintTop_toBottomOf="@+id/button_quxiao">
+
+        <Button
+            android:id="@+id/button2_queding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="386dp"
+            android:layout_marginLeft="386dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shape"
+            android:text="确定"
+            android:textColor="#F8F7F7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_quxiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="449dp"
+            android:layout_marginRight="449dp"
+            android:text="取消"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

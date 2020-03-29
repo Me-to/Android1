@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"     android:background="#ccc"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="1282dp"
+        android:layout_height="58dp"
+        android:background="#009688"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <ImageView
+            android:id="@+id/imaaaa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_launcher_background"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:text="设置"
+            android:textColor="#FAF8F8"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <ListView
+
+        android:id="@+id/listaaaaaaaaaa"
+        android:layout_width="match_parent"
+        android:layout_height="524dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="149dp"
+        android:background="#ccc">
+
+        <Button
+            android:id="@+id/listbao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="464dp"
+            android:layout_marginLeft="464dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/duaaa"
+            android:text="保存"
+            android:textColor="#F8F7F7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="152dp"
+            android:layout_marginLeft="152dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/s"
+            android:text="取消"
+            android:textColor="#F8F7F7"
+            app:layout_constraintStart_toEndOf="@+id/listbao"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+      android:id="@+id/refreshLayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlFinishDuration="500"
+            app:srlEnableLastTime="true"
+            app:srlClassicsSpinnerStyle="FixedBehind"
+            app:srlTextSizeTitle="16sp"
+            app:srlTextSizeTime="10dp"
+            app:srlTextTimeMarginTop="2dp"
+            app:srlDrawableArrowSize="20dp"
+            app:srlDrawableProgressSize="20dp"
+            app:srlDrawableMarginRight="20dp"/>
+      <TextView
+          android:id="@+id/tvaa"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:textSize="36dp"
+          android:text="未刷新前"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>
